@@ -290,11 +290,5 @@
     <None Include="Resources\PlantillaProducto.xlsx" />
     <None Include="Resources\PlantillaVenta.html" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Smartone.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Logo.jpeg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
