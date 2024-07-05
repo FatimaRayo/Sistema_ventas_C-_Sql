@@ -34,7 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logocanal.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
@@ -168,12 +169,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modales\mdAcercade.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modales\mdAcercade.Designer.cs">
-      <DependentUpon>mdAcercade.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modales\mdCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,9 +235,6 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modales\mdAcercade.resx">
-      <DependentUpon>mdAcercade.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Modales\mdCliente.resx">
       <DependentUpon>mdCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,14 +246,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -305,10 +291,10 @@
     <None Include="Resources\PlantillaVenta.html" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LogoCanal.png" />
+    <None Include="Resources\Smartone.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="logocanal.ico" />
+    <None Include="Resources\Logo.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

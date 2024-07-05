@@ -141,11 +141,7 @@ namespace CapaPresentacion
             AbrirFormulario(menureportes, new frmReporteVentas());
         }
 
-        private void menuacercade_Click(object sender, EventArgs e)
-        {
-            mdAcercade md = new mdAcercade();
-            md.ShowDialog();
-        }
+        
 
         private void btnsalir_Click(object sender, EventArgs e)
         {

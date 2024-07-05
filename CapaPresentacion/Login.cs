@@ -57,5 +57,9 @@ namespace CapaPresentacion
             this.Show();
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

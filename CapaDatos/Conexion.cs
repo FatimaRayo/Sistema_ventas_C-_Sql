@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class Conexion
     {
-        public static string cadena = ConfigurationManager.ConnectionStrings["cadena_conexion"].ToString();
+        public static string cadena = "Server=localhost\\SQLEXPRESS;Database=DBSISTEMA_VENTA;Trusted_Connection=True;";
 
     }
 
