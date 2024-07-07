@@ -23,6 +23,7 @@ namespace CapaPresentacion
 
         private void frmProducto_Load(object sender, EventArgs e)
         {
+            // Combobox
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
             cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
             cboestado.DisplayMember = "Texto";
@@ -183,7 +184,7 @@ namespace CapaPresentacion
                 var h = Properties.Resources.check20.Height;
                 var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
-
+                
                 e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }

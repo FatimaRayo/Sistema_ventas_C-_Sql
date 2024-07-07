@@ -13,16 +13,15 @@ using CapaNegocio;
 using CapaPresentacion.Modales;
 using FontAwesome.Sharp;
 
-
+//clase para mostrar y acciones que se pueden realizar
 namespace CapaPresentacion
 {
     public partial class Inicio : Form
     {
-
+        //variables de clase
         private static Usuario usuarioActual;
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
-
 
         public Inicio(Usuario objusuario = null)
         {
@@ -141,11 +140,7 @@ namespace CapaPresentacion
             AbrirFormulario(menureportes, new frmReporteVentas());
         }
 
-        private void menuacercade_Click(object sender, EventArgs e)
-        {
-            mdAcercade md = new mdAcercade();
-            md.ShowDialog();
-        }
+        
 
         private void btnsalir_Click(object sender, EventArgs e)
         {

@@ -14,9 +14,10 @@ namespace CapaPresentacion
         [STAThread]
         static void Main()
         {
-            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-PE");
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-ES");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // La primera vista es la de login
             Application.Run(new Login());
         }
     }

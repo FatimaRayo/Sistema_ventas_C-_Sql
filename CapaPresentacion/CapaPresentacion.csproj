@@ -132,12 +132,6 @@
     <Compile Include="frmReporteCompras.Designer.cs">
       <DependentUpon>frmReporteCompras.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReportes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes.Designer.cs">
-      <DependentUpon>frmReportes.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmReporteVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,9 +216,6 @@
     <EmbeddedResource Include="frmReporteCompras.resx">
       <DependentUpon>frmReporteCompras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes.resx">
-      <DependentUpon>frmReportes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmReporteVentas.resx">
       <DependentUpon>frmReporteVentas.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,10 +296,9 @@
     <None Include="Resources\PlantillaVenta.html" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LogoCanal.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="logocanal.ico" />
+    <None Include="Resources\Logo1.jpeg" />
+    <None Include="Resources\Logo.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

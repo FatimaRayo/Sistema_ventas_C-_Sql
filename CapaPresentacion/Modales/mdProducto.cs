@@ -26,9 +26,10 @@ namespace CapaPresentacion.Modales
         {
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
-
                 if (columna.Visible == true)
                 {
+
+
                     cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
                 }
             }

@@ -60,7 +60,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void btnbuscarproducto_Click(object sender, EventArgs e)
+        private void btnbuscarproducto_Click(object sender, EventArgs e)    
         {
             using (var modal = new mdProducto())
             {
@@ -326,6 +326,8 @@ namespace CapaPresentacion
 
         private void btncrearventa_Click(object sender, EventArgs e)
         {
+            double pagocon_ = Convert.ToDouble(txtpagocon.Text);
+            double totalpagar_ = Convert.ToDouble(txttotalpagar.Text);
 
             if (txtdocumentocliente.Text == "")
             {
@@ -343,6 +345,11 @@ namespace CapaPresentacion
             if (dgvdata.Rows.Count < 1)
             {
                 MessageBox.Show("Debe ingresar productos en la venta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if(pagocon_ < totalpagar_)
+            {
+                MessageBox.Show("Debe ingresar un pago en efectivo suficiente");
                 return;
             }
 
@@ -404,6 +411,11 @@ namespace CapaPresentacion
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
 
+
+        }
+
+        private void txtpagocon_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
