@@ -1,1 +1,1 @@
-#Sistema de ventas usando C# y MySQL 
+Sistema de ventas usando C# y MySQL 
